@@ -1,0 +1,28 @@
+div.container {
+    position:relative;
+}
+h1.error {
+    font-size:1.25em;
+    text-align:right;
+    padding-top:2em;
+}
+h2.error {
+    font-size:8em;
+    color:#c9c9c9;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+p {
+    font-size:0.8em;
+    margin-top:1em;
+    text-align:right;
+}
+a {
+    color:#9cf;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}

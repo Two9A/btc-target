@@ -1,0 +1,91 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family:sans-serif;
+    background:#f4f4f4;
+    line-height:1.3em;
+}
+div.header {
+    height:50px;
+    background:black;
+    border-bottom:2px solid #f7931a;
+}
+div.inner {
+    width:800px;
+    margin:0 auto;
+}
+div.header div.inner h1 {
+    width:160px;
+    height:50px;
+    font-size:1em;
+}
+div.header div.inner h1 a {
+    text-indent:-9999px;
+    display:block;
+    width:160px;
+    height:50px;
+    text-decoration:none;
+    background:url(/img/logo.png) no-repeat top left;
+}
+div.footer {
+    border-top:2px solid black;
+    padding:1em 0;
+}
+div.footer p {
+    font-size:0.8em;
+    text-align:center;
+}
+
+div.content {
+    margin:1em auto 2em;
+}
+div.content div.target {
+    float:left;
+    width:620px;
+}
+div.content div.blocks {
+    float:right;
+    width:169px;
+}
+div.content div.clear {
+    clear:both;
+}
+div.content h2 {
+    font-size:1.25em;
+}
+div.content ul {
+    list-style:none inside;
+}
+div.content div.target h3 {
+    font-size:1.1em;
+    margin-bottom:0.8em;
+}
+div.content div.target p {
+    font-size:0.9em;
+    margin-bottom:1em;
+}
+div.content div.target ul {
+    font-family:monospace;
+    font-size:1.1em;
+    margin:1em 0;
+}
+div.content div.target li.targethash {
+}
+div.content div.target li.currhash {
+    color:#ff4830;
+}
+div.content div.target li.currhash.found {
+    color:#41a83c;
+}
+div.content div.blocks li a {
+    color:#666;
+    text-decoration:none;
+}
+div.content div.blocks li a:hover {
+    text-decoration:underline;
+}
+div.content #initialdata {
+    display:none;
+}

@@ -1,0 +1,10 @@
+div.content p a {
+    color:#326da6;
+    text-decoration:none;
+}
+div.content p a:hover {
+    text-decoration:underline;
+}
+div.content p.breaking {
+    color:#ffb591;
+}

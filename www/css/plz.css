@@ -1,0 +1,87 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family:sans-serif;
+    padding:3em;
+}
+div.container {
+    margin:0 auto;
+    width:700px;
+}
+div.content {
+    height:150px;
+    padding:1em;
+}
+ul.pages {
+    text-align:center;
+    margin:1em auto;
+    width:100%;
+    position:relative;
+}
+ul.pages li {
+    display:inline-block;
+    margin:0 1px;
+}
+ul.pages li a {
+    text-decoration:none;
+    color:white;
+    height:1.5em;
+    line-height:1.5em;
+    overflow:hidden;
+    position:relative;
+    display:inline-block;
+}
+ul.pages li a span {
+    position:relative;
+    transition:transform 0.3s ease 0s;
+    -webkit-transition:-webkit-transform 0.3s ease 0s;
+    background:black;
+    display:inline-block;
+    padding:0 0.5em;
+}
+ul.pages li a span:before {
+    content:attr(data-hover);
+    background:#9cf;
+    color:black;
+    position:absolute;
+    top:1.5em;
+    transform:translate3d(0px, 0px, 0px);
+    -webkit-transform:translate3d(0px, 0px, 0px);
+    padding:0 0.5em;
+    margin-left:-0.5em;
+}
+ul.pages li a:hover span,
+ul.pages li a:focus span {
+    transform:translateY(-100%);
+    -webkit-transform:translateY(-100%);
+}
+ul.pages li.disabled a span {
+    background:white;
+    color:#999;
+}
+ul.pages li.current a span {
+    background:white;
+    color:black;
+    font-weight:bold;
+}
+ul.pages li.disabled a:hover span,
+ul.pages li.disabled a:focus span,
+ul.pages li.current a:hover span,
+ul.pages li.current a:focus span {
+    transform:none;
+    -webkit-transform:none;
+}
+ul.pages li.previous {
+    position:absolute;
+    left:0;
+}
+ul.pages li.next {
+    position:absolute;
+    right:0;
+}
+
+table td { vertical-align:top; padding:1em; }
+table td h2 { font-size:1em; font-weight:normal; border-bottom:1px solid black; margin-bottom:1em; }
+table td pre { width:300px; white-space:pre-wrap; overflow:auto; }
